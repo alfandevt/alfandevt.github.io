@@ -28,30 +28,15 @@
             class="image-container d-lg-block d-flex justify-content-center my-3 gap-2"
           >
             <img
-              src="images/angular-logo.svg"
+              src="images/logos/angular-logo.svg"
               alt="Angular"
               class="logo img-fluid me-3"
             />
             <img
-              src="images/nestjs-logo.svg"
+              src="images/logos/nestjs-logo.svg"
               alt="Angular"
               class="logo img-fluid"
             />
-          </div>
-        </div>
-        <div class="col-lg-6 d-none d-md-block">
-          <div
-            class="image-container d-flex justify-content-center align-items-center h-100"
-          >
-            <div
-              class="me-container position-relative my-4 mx-auto rounded-circle overflow-hidden"
-            >
-              <img
-                src="images/me.jpg"
-                alt="Aldiii"
-                class="img-fluid me-portrait position-relative rounded-circle"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -72,13 +57,13 @@
   </svg>
 </header>
 
-<section class="about-me">
+<section class="about-me my-5">
   <div class="p-md-5">
     <div class="container-xl">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-6">
           <div class="text-container p-3 lh-md mt-5">
-            <h1 class="mb-3">About Me</h1>
+            <h1 class="display-3 mb-3">About Me</h1>
             <p class="lh-md">
               I am a full-stack developer who is a hobbyist and also a Bachelor
               of Law student at Asyafi'iyah Islamic University. I often use my
@@ -89,19 +74,45 @@
             </p>
           </div>
         </div>
+        <div class="col-lg-6">
+          <div
+            class="image-container d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="me-container position-relative my-4 mx-auto rounded-circle overflow-hidden"
+            >
+              <img
+                src="images/me.jpg"
+                alt="Aldiii"
+                class="img-fluid me-portrait position-relative rounded-circle"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <section class="portfolio">
+  <h1 class="display-3 text-center my-3">Portfolios</h1>
   <div class="p-md-5">
     <div class="container-xl">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="text-container p-3">
-            <h1>Portfolio</h1>
+        <div class="col-lg-6">
+          <div class="text-container p-3 my-5">
+            <h2 class="display-4">Bizhare</h2>
+            <p class="lead">
+              I used to be a front-end developer for this company. I gained a
+              lot of knowledge about startups and technology. I worked for about
+              four months and my job was to build a web interface for mobile
+              devices using Angular, until I had to decide to quit because of a
+              single motorcycle accident.
+            </p>
           </div>
+        </div>
+        <div class="col-lg-6">
+          <app-image-show></app-image-show>
         </div>
       </div>
     </div>
