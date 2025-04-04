@@ -95,6 +95,15 @@ img.logo {
   }
 }
 
+// Get In Touch
+.get-in-touch {
+  background: repeating-linear-gradient(
+    145deg,
+    rgb(163, 10, 209),
+    rgb(209, 10, 27) 75%
+  );
+}
+
 // Keyframes
 @keyframes rgb-background {
   0% {
