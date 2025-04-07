@@ -52,6 +52,65 @@ img.logo {
   }
 }
 
+.scroll-indicator {
+  align-items: center;
+  bottom: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  i {
+    animation: slide-icon-down 1.5s 2.5s ease infinite;
+    font-size: 1.6rem;
+    opacity: 0;
+    transform: translateY(-2rem);
+    visibility: hidden;
+  }
+  span {
+    animation: slide-icon-text-fade 1.5s 2.5s ease infinite;
+    opacity: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    visibility: hidden;
+  }
+}
+
+@keyframes slide-icon-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+    visibility: hidden;
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-1rem);
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1rem);
+    visibility: hidden;
+  }
+}
+
+@keyframes slide-icon-text-fade {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  75% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 // Section Portfolio
 .portfolio {
   overflow-x: hidden;
